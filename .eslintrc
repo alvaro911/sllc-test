@@ -1,0 +1,32 @@
+{
+  "extends": ["react-app", "prettier"],
+  "plugins": ["react-hooks", "prettier"],
+  "rules": {
+    "semi": [2, "never"],
+    "arrow-parens": [0],
+    "comma-dangle": [0],
+    "react/prop-types": [1],
+    "react-hooks/exhaustive-deps": [0],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "quotes": [2, "single", "avoid-escape"]
+  },
+  "globals": {
+    "document": false,
+    "window": false,
+    "navigator": false,
+    "render": false,
+    "renderWithTheme": false,
+    "shallowRender": false,
+    "shallowWithStore": false
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  }
+}
